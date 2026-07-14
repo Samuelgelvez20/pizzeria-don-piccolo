@@ -85,33 +85,33 @@ INSERT INTO pizza_ingrediente (id_pizza, id_ingrediente, cantidad) VALUES
 (10,1,200),(10,9,70),(10,10,50),(10,11,50),(10,12,40),(10,13,50),(10,15,1);
 
 -- datos tabla pedidos
-INSERT INTO pedido (id_cliente, fecha_hora, estado, total) VALUES
-(1,'2026-07-01 18:30:00','Entregado',0),
-(1,'2026-07-03 19:10:00','Entregado',0),
-(1,'2026-07-05 20:15:00','Entregado',0),
-(1,'2026-07-07 18:45:00','Entregado',0),
-(1,'2026-07-09 21:00:00','Cancelado',0),
-(1,'2026-07-11 19:20:00','Entregado',0),
+INSERT INTO pedido (id_cliente, fecha_hora, estado) VALUES
+(1,'2026-07-01 18:30:00','Entregado'),
+(1,'2026-07-03 19:10:00','Entregado'),
+(1,'2026-07-05 20:15:00','Entregado'),
+(1,'2026-07-07 18:45:00','Entregado'),
+(1,'2026-07-09 21:00:00','Cancelado'),
+(1,'2026-07-11 19:20:00','Entregado'),
 
-(3,'2026-07-02 18:40:00','Entregado',0),
-(3,'2026-07-04 20:00:00','Entregado',0),
-(3,'2026-07-06 19:30:00','Pendiente',0),
-(3,'2026-07-08 21:10:00','Entregado',0),
+(3,'2026-07-02 18:40:00','Entregado'),
+(3,'2026-07-04 20:00:00','Entregado'),
+(3,'2026-07-06 19:30:00','Pendiente'),
+(3,'2026-07-08 21:10:00','Entregado'),
 
-(2,'2026-07-10 18:00:00','Entregado',0),
-(2,'2026-07-12 19:00:00','En Preparacion',0),
-(2,'2026-07-13 20:10:00','Entregado',0),
+(2,'2026-07-10 18:00:00','Entregado'),
+(2,'2026-07-12 19:00:00','En Preparacion'),
+(2,'2026-07-13 20:10:00','Entregado'),
 
-(5,'2026-07-14 19:00:00','Entregado',0),
-(5,'2026-07-15 20:30:00','Entregado',0),
+(5,'2026-07-14 19:00:00','Entregado'),
+(5,'2026-07-15 20:30:00','Entregado'),
 
-(6,'2026-07-16 18:50:00','Entregado',0),
-(6,'2026-07-17 21:15:00','Pendiente',0),
+(6,'2026-07-16 18:50:00','Entregado'),
+(6,'2026-07-17 21:15:00','Pendiente'),
 
-(7,'2026-07-18 19:45:00','Entregado',0),
+(7,'2026-07-18 19:45:00','Entregado'),
 
-(8,'2026-07-19 20:20:00','Entregado',0),
-(9,'2026-07-20 18:35:00','Entregado',0);
+(8,'2026-07-19 20:20:00','Entregado'),
+(9,'2026-07-20 18:35:00','Entregado');
 
 -- Datos tabla detalle de pedidos
 INSERT INTO detalle_pedido

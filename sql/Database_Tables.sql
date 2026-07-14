@@ -49,7 +49,6 @@ CREATE TABLE pedido (
         'Entregado',
         'Cancelado'
     ) NOT NULL,
-    total DECIMAL(10,2),
 
     FOREIGN KEY (id_cliente)
         REFERENCES cliente(id_cliente)
