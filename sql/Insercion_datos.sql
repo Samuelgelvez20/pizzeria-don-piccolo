@@ -163,24 +163,24 @@ VALUES
 
 (20,1,2,32000);
 
--- Se insertan solo los pedidos entregados
+-- Se insertan los datos de la tabla pago, usando la funcion calcular_total_pedido().
 INSERT INTO pago (id_pedido, metodo_pago, fecha_pago, valor) VALUES
-(1, 'Tarjeta',  '2026-07-01 19:15:00', 0),
-(2, 'Efectivo', '2026-07-03 19:40:00', 0),
-(3, 'App',      '2026-07-05 20:45:00', 0),
-(4, 'Tarjeta',  '2026-07-07 19:30:00', 0),
-(6, 'Efectivo', '2026-07-11 20:00:00', 0),
-(7, 'Tarjeta',  '2026-07-02 19:20:00', 0),
-(8, 'Efectivo', '2026-07-04 20:35:00', 0),
-(10,'Tarjeta',  '2026-07-08 21:45:00', 0),
-(11,'App',      '2026-07-10 18:45:00', 0),
-(13,'Tarjeta',  '2026-07-13 20:50:00', 0),
-(14,'Tarjeta',  '2026-07-14 19:50:00', 0),
-(15,'Efectivo', '2026-07-15 21:00:00', 0),
-(16,'App',      '2026-07-16 19:30:00', 0),
-(18,'Efectivo', '2026-07-18 20:20:00', 0),
-(19,'Tarjeta',  '2026-07-19 21:00:00', 0),
-(20,'App',      '2026-07-20 19:15:00', 0);
+(1, 'Tarjeta',  '2026-07-01 19:15:00', calcular_total_pedido(1)),
+(2, 'Efectivo', '2026-07-03 19:40:00', calcular_total_pedido(2)),
+(3, 'App',      '2026-07-05 20:45:00', calcular_total_pedido(3)),
+(4, 'Tarjeta',  '2026-07-07 19:30:00', calcular_total_pedido(4)),
+(6, 'Efectivo', '2026-07-11 20:00:00', calcular_total_pedido(6)),
+(7, 'Tarjeta',  '2026-07-02 19:20:00', calcular_total_pedido(7)),
+(8, 'Efectivo', '2026-07-04 20:35:00', calcular_total_pedido(8)),
+(10,'Tarjeta',  '2026-07-08 21:45:00', calcular_total_pedido(10)),
+(11,'App',      '2026-07-10 18:45:00', calcular_total_pedido(11)),
+(13,'Tarjeta',  '2026-07-13 20:50:00', calcular_total_pedido(13)),
+(14,'Tarjeta',  '2026-07-14 19:50:00', calcular_total_pedido(14)),
+(15,'Efectivo', '2026-07-15 21:00:00', calcular_total_pedido(15)),
+(16,'App',      '2026-07-16 19:30:00', calcular_total_pedido(16)),
+(18,'Efectivo', '2026-07-18 20:20:00', calcular_total_pedido(18)),
+(19,'Tarjeta',  '2026-07-19 21:00:00', calcular_total_pedido(19)),
+(20,'App',      '2026-07-20 19:15:00', calcular_total_pedido(20));
 
 -- Se insertan solo los datos entregados como domicilios
 INSERT INTO domicilio

@@ -38,7 +38,7 @@ Proyecto desarrollado en **MySQL** para gestionar el proceso de venta y entrega 
   - Actualización automática del stock de ingredientes
   - Auditoría de cambios de precios de pizzas
   - Liberación automática del repartidor al finalizar un domicilio
-- [ ] Consultas SQL
+- [x] Consultas SQL
 - [ ] Vistas
 
 ## Estructura del proyecto
