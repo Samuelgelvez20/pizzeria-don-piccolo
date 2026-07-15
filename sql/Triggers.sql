@@ -42,7 +42,7 @@ BEGIN
 
     IF OLD.precio_base <> NEW.precio_base THEN
 
-        INSERT INTO historial_precios(
+        INSERT INTO historial_precio(
             id_pizza,
             precio_anterior,
             precio_nuevo
